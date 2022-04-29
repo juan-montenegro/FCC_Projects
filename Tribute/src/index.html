@@ -1,0 +1,61 @@
+<main class="container">
+  <article class="box">
+    <h1 id="title">Satisfaction Survey</h1>
+    <p id="description">Please give us your opinion to keep improving</p>
+    <form id="survey-form">
+      <label id="name-label" for="name" class="form-labels">
+        First name:
+      </label><br>
+      <input type="text" id="name" name="name" class="input-area" placeholder="Enter your name" required />
+      <label id="email-label" for="email" class="form-labels">
+        Email:
+      </label><br>
+      <input type="email" id="email" name="email" class="input-area" placeholder="Enter your Email" required />
+      <label id="number-label" for="email" class="form-labels">
+        Age (Optional):
+      </label><br>
+      <input type="number" id="number" name="age" class="input-area" placeholder="Enter your age" min="10" max="99" />
+      <label id="dropdown-label" for="role" class="form-labels">Select occupation:</label>
+      <select id="dropdown" name="role" class="input-area" required>
+        <option disabled selected value>Select a role</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="engineer">Engineer</option>
+      </select>
+      <p class="form-labels">How would you define your experience:</p>
+      <div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="radio" name="user-recommend" value="excellent" class="input-radio">Excellent</label>
+        </div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="radio" name="user-recommend" value="good" class="input-radio">Good</label>
+        </div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="radio" name="user-recommend" value="average" class="input-radio">Average</label>
+        </div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="radio" name="user-recommend" value="Bad" class="input-radio" checked>Bad</label>
+        </div>
+      </div>
+      <p class="form-labels">Where did you hear of us:</p>
+      <div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="checkbox" name="user-recommend" value="definitely" class="input-radio">Facebook</label>
+        </div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="checkbox" name="user-recommend" value="definitely" class="input-radio">Instagram</label>
+        </div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="checkbox" name="user-recommend" value="definitely" class="input-radio">Linkedin</label>
+        </div>
+        <div class="checkbox">
+          <label id="dropdown-label" for="role" class="form-labels"> <input type="checkbox" name="user-recommend" value="definitely" class="input-radio">Other</label>
+        </div>
+      </div>
+      <textarea class="input-area" placeholder="Specify which ones..."></textarea>
+      <div class="button">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </article>
+</main>
